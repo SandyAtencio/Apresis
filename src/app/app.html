@@ -1,19 +1,57 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <ion-content>
+      <ion-item class="menu-header">
+          <ion-avatar item-start>
+              <img src="https://andro4all.com/files/2016/07/pokemon-hulu-pikachu800.0-700x500.jpg">
+          </ion-avatar>
+          <h2>Apresis</h2>
+          <p>apresis@udi.edu.co</p>
+        </ion-item>
+
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <button menuClose ion-item *ngFor="let p of paginas" (click)="abrirPagina(p)">
+          <ion-icon name="{{ p.icono }}" item-start></ion-icon>
         {{p.title}}
       </button>
     </ion-list>
   </ion-content>
 
-</ion-menu>
+    <ion-footer>
+          <ion-segment color="dark">
+              <ion-segment-button>
+                <ion-icon name="logo-facebook"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button >
+                  <ion-icon name="logo-github"></ion-icon>
+                </ion-segment-button>
+            </ion-segment>
+    </ion-footer>
 
-<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+    <!--<ion-footer>
+        <ion-toolbar >
+          <ion-buttons left>
+              <button ion-button clear icon-only>
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </button>
+          </ion-buttons>
+
+          <ion-buttons left>
+              <button ion-button icon-only>
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </button>
+          </ion-buttons>
+      
+          <ion-buttons left>
+              <button ion-button icon-only>
+                  <ion-icon name="logo-github"></ion-icon>
+                </button>
+          </ion-buttons>
+      
+        </ion-toolbar>
+      </ion-footer>-->
+
+</ion-menu>
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
