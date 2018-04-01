@@ -1,0 +1,26 @@
+{
+
+    "Aprender":{
+        "Pilas":{
+            "Titulo":"PILAS",
+            "Texto_1":"Una pila es una estructura de datos de acceso restrictivo a sus elementos. Se puede entender como una pila de libros que se amontonan de abajo hacia arriba. En principio no hay libros; después ponemos uno, y otro encima de éste, y así sucesivamente. Posteriormente los solemos retirar empezando desde la cima de la pila de libros, es decir, desde el último que pusimos, y terminaríamos por retirar el primero que pusimos, posiblemente ya cubierto de polvo.",
+            "Subtitulo_1":"Operaciones Básicas",
+            "Texto_2" : "Apilar/ insertarPila: Es Amontonar, o colocar un elemento sobre otro haciendo un montón. <br/> Desapilar /sacarPila: Es retirar el último de los elementos colocados en la pila o montón ",
+            "Subtitulo_2":"APLICACIONES DE PILAS",
+            "Texto_ejemplo":"Al organizar los carros de compras se ocasiona una pila puesto que el primer carro que entra es el último que sale",
+            "imagen": "https://thumbs.dreamstime.com/z/pila-de-carros-de-la-compra-fuera-de-una-tienda-64798336.jpg",
+            "video": "https://www.youtube.com/watch?v=56jBvugTCn0"
+        },
+        "Colas":{
+            "Titulo":"COLAS",
+            "Texto_1":"Una cola es una estructura de datos de acceso restrictivo a sus elementos. Un ejemplo sencillo es la cola del cine o del autobús, el primero que llegue será el primero en entrar, y afortunadamente en un sistema informático no se cuela nadie salvo que el programador lo diga. <br/> Es una estructura de tipo FIFO (First In First Out), es decir: primero en entrar, primero en salir.",
+            "Subtitulo_1":"Operaciones Básicas",
+            "Texto_2" : "Agregar/Encolar: Es añadir un elemento al final de la cola. <br/> Extraer/Desencolar:Es retirar el primer elemento de la cola.",
+            "Subtitulo_2":"APLICACIONES DE LAS COLAS",
+            "Texto_ejemplo":"En nuestra cotidianidad podemos observar que el concepto de colas se ve reflejado en un grupo de personas que hacen una fila en un banco.",
+            "imagen": "https://www.delepesoasuspesos.com/wp-content/uploads/2016/05/ThinkstockPhotos-618455242-e1499668000498.jpg",
+            "video": "https://www.youtube.com/watch?v=56jBvugTCn0"
+        }
+    }
+
+  }
