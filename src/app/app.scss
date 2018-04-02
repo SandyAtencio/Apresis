@@ -17,9 +17,20 @@
 
 .menu-header{
     height: 150px;
-    background: rgba(243, 243, 243, 0.809);
  }
+
  ion-avatar img{
     width: 80px !important;
     height: 80px !important;
+ }
+
+ .fondo{
+    background-color: color($colors, fondoApresis) !important;
+ }
+
+ hr{
+    background-color: rgba(110,105,105,0.28) !important;
+    border-radius: 1em !important;
+    height: .2em !important;
+    max-width: 90%;
  }
