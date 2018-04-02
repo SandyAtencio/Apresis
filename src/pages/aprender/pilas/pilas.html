@@ -1,0 +1,86 @@
+<ion-header>
+
+  <ion-navbar color="apresis">
+    <ion-title>Pilas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="fondo">
+
+  <ion-card>
+
+    <ion-item text-center> 
+      <h1> {{ objetoAprender.Titulo }} </h1>
+    </ion-item>
+  
+    <ion-card-content text-justify>
+      <p>{{ objetoAprender.Texto_1 }}</p>
+    </ion-card-content>
+
+    <ion-item text-center> 
+      <h2 > {{ objetoAprender.Subtitulo_1 }} </h2>
+    </ion-item>
+
+    <ion-card-content text-justify>
+      <p [innerHTML]="objetoAprender.Texto_2"></p>
+    </ion-card-content>
+
+    <ion-item text-center> 
+      <h2> {{ objetoAprender.Subtitulo_2 }} </h2>
+    </ion-item>
+
+    <ion-card-content text-justify>
+      <p>{{ objetoAprender.Texto_ejemplo  }}</p>
+    </ion-card-content>
+
+    <ion-item text-center> 
+      <img src="{{ objetoAprender.imagen }}">
+    </ion-item>
+    
+    <ion-item text-center> 
+        <h2> Videos </h2>
+    </ion-item>
+
+    <ion-item text-center> 
+        <iframe  
+          [src]="showVideo(1)" 
+          type="text/html"  
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen" 
+          msallowfullscreen="msallowfullscreen" 
+          oallowfullscreen="oallowfullscreen" 
+          webkitallowfullscreen="webkitallowfullscreen"
+          rel="0&amp;controls=1&amp;showinfo=0" 
+          frameborder="0" 
+        ></iframe> 
+    </ion-item>
+
+    <ion-item text-center> 
+         <hr>
+    </ion-item>
+
+    <ion-item text-center> 
+        <iframe  
+          [src]="showVideo(2)" 
+          type="text/html"  
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen" 
+          msallowfullscreen="msallowfullscreen" 
+          oallowfullscreen="oallowfullscreen" 
+          webkitallowfullscreen="webkitallowfullscreen"
+          rel="0&amp;controls=1&amp;showinfo=0" 
+          frameborder="0" 
+        ></iframe> 
+    </ion-item>
+
+    <ion-item > 
+         
+    </ion-item>
+
+  </ion-card>
+
+  
+
+</ion-content>

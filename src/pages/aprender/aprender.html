@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="apresis">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -8,21 +8,17 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content  class="fondo" >
   <ion-grid>
       <ion-row>
-        <ion-col>
+        <ion-col (click)="irAPaginaPilas()">
             <img src="https://andro4all.com/files/2016/07/pokemon-hulu-pikachu800.0-700x500.jpg">
-            <button ion-button full (click)="irAPaginaPilas()">
-              Pilas
-            </button>
         </ion-col>
-        <ion-col>
+        <ion-col (click)="irAPaginaColas()">
             <img src="https://andro4all.com/files/2016/07/pokemon-hulu-pikachu800.0-700x500.jpg">
-            <button ion-button full (click)="irAPaginaColas()">
-              Colas
-            </button>
         </ion-col>
       </ion-row>
     </ion-grid>
 </ion-content>
+
+

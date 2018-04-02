@@ -1,16 +1,16 @@
 <ion-menu [content]="content">
-  <ion-content>
-      <ion-item class="menu-header">
+  <ion-content >
+      <ion-item class="menu-header" color="apresis">
           <ion-avatar item-start>
               <img src="https://andro4all.com/files/2016/07/pokemon-hulu-pikachu800.0-700x500.jpg">
           </ion-avatar>
-          <h2>Apresis</h2>
-          <p>apresis@udi.edu.co</p>
-        </ion-item>
+          <h1> <b> Apresis</b> </h1>
+          <h2> apresis@udi.edu.co </h2>
+      </ion-item>
 
     <ion-list>
       <button menuClose ion-item *ngFor="let p of paginas" (click)="abrirPagina(p)">
-          <ion-icon name="{{ p.icono }}" item-start></ion-icon>
+          <ion-icon name="{{ p.icono }}" item-start color="apresis"></ion-icon>
         {{p.title}}
       </button>
     </ion-list>
@@ -19,13 +19,13 @@
     <ion-footer>
           <ion-segment color="dark">
               <ion-segment-button>
-                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-facebook" color="apresis"></ion-icon>
               </ion-segment-button>
               <ion-segment-button >
-                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-twitter" color="apresis"></ion-icon>
               </ion-segment-button>
               <ion-segment-button >
-                  <ion-icon name="logo-github"></ion-icon>
+                  <ion-icon name="logo-github" color="apresis"></ion-icon>
                 </ion-segment-button>
             </ion-segment>
     </ion-footer>
