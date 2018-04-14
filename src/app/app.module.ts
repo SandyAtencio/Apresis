@@ -5,7 +5,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpClientModule  } from '@angular/common/http';
 
 import { MyApp } from './app.component';
-import { InicioPage, AprenderPage, PracticarPage, QuizPage, PilasPage, ColasPage, } from "../pages/index.paginas";
+import { InicioPage, AprenderPage, PracticarPage, QuizPage, PilasPage, ColasPage, Juego1Page, Juego2Page } from "../pages/index.paginas";
 
 /*Providers*/
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +20,9 @@ import { AprenderProvider } from '../providers/aprender/aprender';
     PracticarPage,
     QuizPage,
     PilasPage,
-    ColasPage
+    ColasPage,
+    Juego1Page,
+    Juego2Page
   ],
   imports: [
     HttpClientModule ,
@@ -35,7 +37,9 @@ import { AprenderProvider } from '../providers/aprender/aprender';
     PracticarPage,
     QuizPage,
     PilasPage,
-    ColasPage
+    ColasPage,
+    Juego1Page,
+    Juego2Page
   ],
   providers: [
     StatusBar,

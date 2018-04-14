@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the PracticarPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Juego1Page, Juego2Page } from "../index.paginas";
 
 @Component({
   selector: 'page-practicar',
@@ -17,8 +12,13 @@ export class PracticarPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PracticarPage');
+ 
+  irAJuego1(){
+    this.navCtrl.push( Juego1Page );
+  }
+
+  irAJuego2(){
+    this.navCtrl.push( Juego2Page );
   }
 
 }
