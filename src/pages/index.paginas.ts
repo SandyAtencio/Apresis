@@ -7,3 +7,4 @@ export { PilasPage } from "./aprender/pilas/pilas";
 export { ColasPage } from "./aprender/colas/colas";
 export { Juego1Page } from "./practicar/juego1/juego1";
 export { Juego2Page } from "./practicar/juego2/juego2";
+export { Juego3Page } from "./practicar/juego3/juego3";
