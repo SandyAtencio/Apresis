@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { Juego1Page, Juego2Page } from "../index.paginas";
+import { Juego1Page, Juego2Page, Juego3Page } from "../index.paginas";
 
 @Component({
   selector: 'page-practicar',
@@ -21,4 +21,10 @@ export class PracticarPage {
     this.navCtrl.push( Juego2Page );
   }
 
+  irAJuego3(){
+    this.navCtrl.push( Juego3Page );
+  }
+
 }
+
+

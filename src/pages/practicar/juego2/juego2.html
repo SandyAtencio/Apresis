@@ -3,11 +3,39 @@
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>Juego 2</ion-title>
+      <ion-title>Colas</ion-title>
     </ion-navbar>
   </ion-header>
   
   
   <ion-content class="fondo" padding>
-    Juego 2
+
+      <ion-card> 
+        
+          <ion-card-header text-wrap>
+              <p class="recordatorio" text-center >¡Recuerda que la COLA es de tipo FIFO! <br> "Primero en entrar, primero en salir"</p>
+          </ion-card-header>
+  
+          <ion-card-content>
+              <p text-center>Presiona el botón (<b class="recordatorio iconSize">+</b>) para encolar</p>
+              <p text-center>Presiona el botón (<b class="recordatorio iconSize">-</b>) para desencolar</p>
+          </ion-card-content>
+  
+        </ion-card>
+  
+        <div padding-top>
+          <ion-list [@fadeInOut] class="cola" *ngFor="let item of element; let i = index" >
+              <ion-item color="danger">
+              {{ element[i] }}
+              </ion-item>  
+          </ion-list>
+        </div>
+  
+        <ion-fab left bottom>
+          <button ion-fab (click)="addTail()" color="apresis"><ion-icon name="add" ></ion-icon></button>
+        </ion-fab>
+        <ion-fab right bottom>
+          <button ion-fab (click)="removeTail()" color="danger"><ion-icon name="md-remove"></ion-icon></button>
+        </ion-fab>
+
   </ion-content>
