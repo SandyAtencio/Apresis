@@ -12,6 +12,7 @@ import { InicioPage, AprenderPage, PracticarPage, QuizPage, PilasPage, ColasPage
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AprenderProvider } from '../providers/aprender/aprender';
+import { PracticarProvider } from '../providers/practicar/practicar';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { AprenderProvider } from '../providers/aprender/aprender';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AprenderProvider
+    AprenderProvider,
+    PracticarProvider
   ]
 })
 export class AppModule {}

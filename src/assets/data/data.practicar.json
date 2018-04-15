@@ -1,0 +1,64 @@
+{
+  "palabras":{
+      "0":{
+          "frase_1":{
+            "texto" : "Las PILAS",
+            "Posicion": 1
+          },
+          "frase_2":{
+            "texto" : "de tipo LIFO",
+            "Posicion": 3
+            
+          },
+          "frase_3":{
+            "texto" : "son estructuras",
+            "Posicion": 2
+          }
+      },
+      "1":{
+          "frase_1":{
+            "texto" : "Las COLAS",
+            "Posicion": 1
+          },
+          "frase_2":{
+            "texto" : "de tipo FIFO",
+            "Posicion": 3
+            
+          },
+          "frase_3":{
+            "texto" : "son estructuras",
+            "Posicion": 2
+          }
+      },
+      "2":{
+          "frase_1":{
+            "texto" : "Las PILAS",
+            "Posicion": 1
+          },
+          "frase_2":{
+            "texto" : "de tipo LIFO",
+            "Posicion": 3
+            
+          },
+          "frase_3":{
+            "texto" : "son estructuras",
+            "Posicion": 2
+          }
+      },
+      "3":{
+          "frase_1":{
+            "texto" : "Las COLAS",
+            "Posicion": 1
+          },
+          "frase_2":{
+            "texto" : "de tipo FIFO",
+            "Posicion": 3
+            
+          },
+          "frase_3":{
+            "texto" : "son estructuras",
+            "Posicion": 2
+          }
+      }
+  }
+}

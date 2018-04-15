@@ -3,11 +3,39 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Juego 3</ion-title>
+    <ion-title>Ordena la frase</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content class="fondo" padding>
-  Juego 3
+
+    <ion-card> 
+
+        <ion-card-header text-wrap>
+            <p class="recordatorio" text-center >Este juego consiste en ordenar de forma correcta frases del tema pilas y colas</p>
+        </ion-card-header>
+    </ion-card>
+
+    <div class="margin-top-bottom_personalizado" > 
+        <ion-list reorder="true" (ionItemReorder)="reordenarFrase($event)">
+
+            <ion-item >
+                {{ fraseArray[0] | uppercase}}
+            </ion-item>
+
+            <ion-item >
+                {{ fraseArray[1] | uppercase }}
+            </ion-item>
+
+            <ion-item >
+                {{ fraseArray[2] | uppercase }}
+            </ion-item>
+
+        </ion-list>
+    </div>
+
+    <button margin-top ion-button block round color="apresis" (click)="verificationWord()">Verificar</button>
+
+
 </ion-content>
