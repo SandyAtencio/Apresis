@@ -99,7 +99,7 @@ export class Juego3Page {
 
     }).catch(err => {
 
-      console.log(err)
+      console.log(err);
 
     })
 

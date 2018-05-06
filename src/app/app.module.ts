@@ -4,6 +4,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { HttpClientModule  } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
 import { InicioPage, AprenderPage, PracticarPage, QuizPage, PilasPage, ColasPage, Juego1Page, Juego2Page, Juego3Page } from "../pages/index.paginas";
@@ -13,6 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AprenderProvider } from '../providers/aprender/aprender';
 import { PracticarProvider } from '../providers/practicar/practicar';
+import { EvaluarProvider } from '../providers/evaluar/evaluar';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { PracticarProvider } from '../providers/practicar/practicar';
   ],
   imports: [
     HttpClientModule ,
+    HttpModule,
     BrowserModule,
     BrowserAnimationsModule,
     IonicModule.forRoot(MyApp),
@@ -51,7 +54,8 @@ import { PracticarProvider } from '../providers/practicar/practicar';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AprenderProvider,
-    PracticarProvider
+    PracticarProvider,
+    EvaluarProvider
   ]
 })
 export class AppModule {}

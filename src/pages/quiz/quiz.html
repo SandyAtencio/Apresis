@@ -7,7 +7,45 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content class="fondo" padding>
-  Evaluar
+  
+  <div *ngFor="let item of pregunta; let i = index" >
+    <ion-card >
+
+      <ion-item text-wrap>
+        <h2>{{ item.Pregunta }} </h2>
+      </ion-item>
+    
+      <ion-card-content>
+        <ion-list radio-group [(ngModel)]="rtaSeleccionada[i]">
+          <ion-list-header>
+            Respuestas
+          </ion-list-header>
+        
+          <ion-item text-wrap>
+            <ion-label>{{ item.Respuesta_1 }}</ion-label>
+            <ion-radio color="apresis" value="{{ item.Respuesta_1 }}"></ion-radio>
+          </ion-item>
+
+          <ion-item text-wrap>
+            <ion-label>{{ item.Respuesta_2 }}</ion-label>
+            <ion-radio color="apresis" value="{{ item.Respuesta_2 }}"></ion-radio>
+          </ion-item>
+
+          <ion-item text-wrap>
+            <ion-label>{{ item.Respuesta_3 }}</ion-label>
+            <ion-radio color="apresis" value="{{ item.Respuesta_3 }}"></ion-radio>
+          </ion-item>
+
+        </ion-list>
+      </ion-card-content>
+
+    </ion-card>
+    
+    <hr style="margin-top:2em;margin-bottom: 2em;background-color: #60b672 !important;">
+
+  </div>  
+
+  <button ion-button block color="apresis" (click)="validateQuestions()" >Revisar</button>
+  
 </ion-content>

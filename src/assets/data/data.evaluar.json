@@ -1,0 +1,18 @@
+{
+  "Preguntas":{
+    "Pregunta_1":{
+      "Pregunta" : "¿Que es una pila?",
+      "Respuesta_1": "Es una estructura de datos que permite almacenar una colección de elementos, todos del mismo tipo.",
+      "Respuesta_2": "Es una estructura de datos en la cual cada nodo  siempre tiene un hijo izquierdo y un hijo derecho.",
+      "Respuesta_3": "Es una estructura de datos en la que el modo de acceso a sus elementos es de tipo LIFO, que permite almacenar y recuperar datos.",
+      "RespuestaCorrecta": "Es una estructura de datos en la que el modo de acceso a sus elementos es de tipo LIFO, que permite almacenar y recuperar datos."
+    },
+    "Pregunta_2":{
+      "Pregunta" : "¿Un ejemplo de la vida real basado en las colas seria?",
+      "Respuesta_1": "Un tambor de CD's.",
+      "Respuesta_2": "Personas haciendo una fila para ver una pelicula en el cine.",
+      "Respuesta_3": "Latas apiladas en un supermercado.",
+      "RespuestaCorrecta": "Personas haciendo una fila para ver una pelicula en el cine."
+    }
+  }
+}
