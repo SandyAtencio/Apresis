@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, AlertController} from 'ionic-angular';
 import { EvaluarProvider } from "../../providers/evaluar/evaluar";
+
+import { InicioPage } from "../../pages/index.paginas";
 
 @Component({
   selector: 'page-quiz',
@@ -13,7 +15,11 @@ export class QuizPage {
   public rtaSeleccionada:any = {};
   public message:string = ""; 
 
-  constructor(public navCtrl: NavController, public serviceEvaluar: EvaluarProvider) {
+  constructor(
+    public navCtrl:         NavController, 
+    public serviceEvaluar:  EvaluarProvider,
+    public alertCtrl:       AlertController
+  ) {
   }
 
   ionViewDidLoad() {
@@ -31,18 +37,38 @@ export class QuizPage {
 
   validateQuestions(){
 
-    if( this.rtaSeleccionada[0] != this.respuestas[0] ){
-      this.message += "Primer pregunta incorrecta, ";
-    }
-    
-    if( this.rtaSeleccionada[1] != this.respuestas[1]){
-      this.message += "Segunda pregunta incorrecta";
+    if( this.rtaSeleccionada[0] != this.respuestas[0] && this.rtaSeleccionada[1] != this.respuestas[1]  ){
+        this.message += "!Lo sentimos fallaste en las 2 preguntas, vuelve a intentarlo¡";
+    }else  if( this.rtaSeleccionada[1] != this.respuestas[1]){
+        this.message += "!Fallaste en la pregunta 2, vuelve a intentarlo¡";
+    }else if( this.rtaSeleccionada[0] != this.respuestas[0] ){
+        this.message += "!Fallaste en la pregunta 1, vuelve a intentarlo¡";
     }else{
-      this.message += "!Felicitaciones preguntas constestadas correctamente¡";
+      this.message += "!Felicitaciones preguntas constestadas correctamente¡"; 
     }
 
-    console.log(this.message)
+    let alert = this.alertCtrl.create({
+        title: 'Apresis!',
+        subTitle: this.message,
+        buttons: [
+          {
+            text: 'Cancelar',
+            role: 'cancel',
+            handler: () => {
+              this.navCtrl.setRoot(InicioPage);
+            }
+          },
+          {
+            text: 'De acuerdo',
+            handler: () => {
+              this.navCtrl.setRoot(QuizPage);
+            }
+          }
+        ]
+    });
 
+    alert.present();
+    
   }
 
 }
