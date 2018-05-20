@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from "@angular/platform-browser";
 
-
 import { AprenderProvider } from "../../../providers/aprender/aprender";
 
 
@@ -12,12 +11,15 @@ import { AprenderProvider } from "../../../providers/aprender/aprender";
 export class PilasPage {
 
   public objetoAprender:any = {};
+  public cargaNoticia: boolean;
 
   constructor(public serviceAprender: AprenderProvider , public dom: DomSanitizer) {
 
-    serviceAprender.getDataAprender().then( data => {
+    this.serviceAprender.getDataAprender().then( data => {
       
       this.objetoAprender = data['Aprender'].Pilas ;
+
+      this.cargaNoticia = true;
 
     }).catch(err => {
 
