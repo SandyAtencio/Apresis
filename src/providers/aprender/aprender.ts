@@ -21,8 +21,7 @@ export class AprenderProvider {
     });
 
     return promesa;
-
+    
   }
-
 
 }
